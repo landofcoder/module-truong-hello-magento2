@@ -18,7 +18,11 @@ class Posts extends Template implements BlockInterface {
 
 	public function sayHello()
 	{
-		return $this->helperData->getGeneralConfig('display_text');;
+		return $this->helperData->getGeneralConfig('display_text');
 	}
+	// public function hello(){
+	// 	echo "hello";
+	// 	exit();
+	// }
 
 }

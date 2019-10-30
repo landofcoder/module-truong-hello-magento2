@@ -4,9 +4,9 @@ namespace Lof\TruongHelloMagento2\Block\Widget;
 use Magento\Framework\View\Element\Template;
 use Magento\Widget\Block\BlockInterface; 
  
-class HelloPosts extends Template implements BlockInterface {
+class HelloPost extends Template implements BlockInterface {
 
-    protected $_template = "widget/helloposts.phtml";
+    protected $_template = "widget/hellopost.phtml";
     protected $helperData;
 	public function __construct(
 		\Magento\Framework\View\Element\Template\Context $context,
@@ -16,10 +16,11 @@ class HelloPosts extends Template implements BlockInterface {
 		parent::__construct($context);
 	}
 
-	public function sayHello()
+	public function Hello()
 	{
-		echo 'hi';
-		exit();
+		return $this->getData('helloposts');
+		//return __(" Magento");
+		
 	}
 
 }

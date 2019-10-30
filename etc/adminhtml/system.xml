@@ -19,6 +19,7 @@
                     <label>Display Text</label>
                     <comment>This text will display on the frontend.</comment>
                 </field>
+                
             </group>
         </section>
     </system>

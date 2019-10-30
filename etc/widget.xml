@@ -1,11 +1,24 @@
-<?xml version="1.0" ?>
-<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:truonghelomagento2:Magento_Widget:etc/widget.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+		 
 	<widget class="Lof\TruongHelloMagento2\Block\Widget\Posts" id="lof_truonghellomagento2_posts">
-		<label>Blog Posts Test</label>
-		<description>Posts</description>
+		<label translate="true">Blog Posts Test</label>
+		<description translate="true">Posts</description>
 		<parameters>
 			<parameter name="posts" sort_order="10" visible="true" xsi:type="text">
-				<label>Custom Posts Label</label>
+				<label translate="true">Custom Posts Label</label>
+			</parameter>
+        </parameters>
+        
+	</widget>
+	<widget class="Lof\TruongHelloMagento2\Block\Widget\HelloPost" id="lof_truonghellomagento2_hellopost">
+		<label translate="true">Blog Hello Posts Test</label>
+		<description translate="true">Posts</description>
+		<parameters>
+			<parameter name="helloposts" sort_order="10" visible="true" xsi:type="text">
+				<label translate="true">Custom Posts Label</label>
 			</parameter>
 		</parameters>
 	</widget>
