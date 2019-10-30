@@ -1,17 +1,26 @@
-<?php 
+<?php
+
+/**
+ * Test widget get text from configtion
+ * 
+ * @return self
+ * 
+ * */
+
 namespace Lof\TruongHelloMagento2\Block\Widget;
 
 use Magento\Framework\View\Element\Template;
-use Magento\Widget\Block\BlockInterface; 
- 
-class Posts extends Template implements BlockInterface {
+use Magento\Widget\Block\BlockInterface;
 
-    protected $_template = "widget/posts.phtml";
-    protected $helperData;
+class Posts extends Template implements BlockInterface
+{
+
+	protected $_template = "widget/posts.phtml";
+	protected $helperData;
 	public function __construct(
 		\Magento\Framework\View\Element\Template\Context $context,
-		\Lof\TruongHelloMagento2\Helper\Data $helperData)
-	{
+		\Lof\TruongHelloMagento2\Helper\Data $helperData
+	) {
 		$this->helperData = $helperData;
 		parent::__construct($context);
 	}
@@ -20,9 +29,4 @@ class Posts extends Template implements BlockInterface {
 	{
 		return $this->helperData->getGeneralConfig('display_text');
 	}
-	// public function hello(){
-	// 	echo "hello";
-	// 	exit();
-	// }
-
 }

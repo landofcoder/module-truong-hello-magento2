@@ -1,10 +1,17 @@
 <?php
 
+/**
+ * Test widget, get data from widget
+ * 
+ * 
+ * **/
+
 namespace Lof\TruongHelloMagento2\Controller\Index;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\View\Result\PageFactory;
+
 class Config extends \Magento\Framework\App\Action\Action
 {
 
@@ -16,8 +23,7 @@ class Config extends \Magento\Framework\App\Action\Action
 		\Magento\Framework\App\Action\Context $context,
 		\Lof\TruongHelloMagento2\Helper\Data $helperData
 
-	)
-	{
+	) {
 		$this->helperData = $helperData;
 		return parent::__construct($context);
 	}
@@ -33,6 +39,5 @@ class Config extends \Magento\Framework\App\Action\Action
 		echo $this->helperData->getGeneralConfig('enable');
 		echo $this->helperData->getGeneralConfig('display_text');
 		exit();
-
 	}
 }
