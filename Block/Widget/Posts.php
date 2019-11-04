@@ -4,7 +4,6 @@
  * Test widget get text from configtion
  * 
  * @return self
- * 
  * */
 
 namespace Lof\TruongHelloMagento2\Block\Widget;
